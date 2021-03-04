@@ -1,0 +1,66 @@
+for //va a dar 5 vueltas del 0 al 4
+	for (let i = 0; i < 5; i++) {
+		
+	}
+-------------------------------------------------------------------------------------------------
+//do whille (hasta que el usuario no quiera ingresar mas persona)
+let seguir; 
+do {
+
+    seguir= prompt("¿desea ingresar otro producto?").toLowerCase();
+  } while seguir== 's' || seguir== 'si')
+-------------------------------------------------------------------------------------------------
+//validar una variable con numero
+Bolsas = parseInt(prompt("Ingrese la cantidad de bolsas"));
+    while (isNaN(Bolsas) || Bolsas < 0) {
+      Bolsas = prompt("Error. Ingrese la cantidad de bolsas (no se puede ingresar 0 bolsas)");
+    }
+----------------------------------------------------------------------------------------------
+//validar un string con 3 posibilidades
+   Tipo = prompt("Ingrese el tipo de producto(arena, cal, cemento)");
+    while (Tipo != 'arena' && Tipo != 'cal' && Tipo != 'cemento') {
+      Tipo = prompt("Error. Ingrese el tipo de producto(arena, cal, cemento)");
+    }
+------------------------------------------------------------------------------------------------
+if para sacar el maximo
+//para saber el producto con mas cantidad
+  if (variable1 > variable2 && variable1> variable3 ) {
+    ProductoMaxBolsas = "variable 1";
+  } else if ( variable2 >= variable1&& variable2> variable3 ) {
+    ProductoMaxBolsas = "variable 2";
+  } else {
+    ProductoMaxBolsas = "variable 3";
+  }
+-----------------------------------------------------------------------------------------------------
+if para sacar el mas caro de algo o el mas grande, (el mas barato cambiando signo)
+if (flagCaro || tipoMasCaroPrecio < precio) {
+			flagCaro = 0;
+			tipoMasCaro = producto;
+			tipoMasCaroPrecio = precio;
+			tipoMasCaroMarca = marca;
+		}
+-----------------------------------------------------------------------------------------------------
+if para la respuesta de algo como 3 promedio
+let respuestaA;
+
+if (contAlcohol != 0) {
+		promAlcohol = cantAlcohol / contAlcohol;
+		respuestaA += "A_ el promedio de alcohol es " + promAlcohol;
+	}
+	else {
+		respuestaA += "A_ No se compro ningun producto con alcohol";
+	}
+	if (contIac != 0) {
+		promIac = cantIac / contIac;
+		respuestaA += ", El promedio de iac es:" + promIac;
+	}
+	else {
+		respuestaA += ", No se compro ningun producto con iac";
+	}
+	if (contQuat != 0) {
+		promQuat = cantQuat / contQuat;
+		respuestaA += ", El promedio de quat es:" + promQuat;
+	}
+	else {
+		respuestaA += ", No se compro ningun producto con quat";
+	}
